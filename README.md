@@ -1,5 +1,15 @@
 This is a [Plasmo extension](https://docs.plasmo.com/) project bootstrapped with [`plasmo init`](https://www.npmjs.com/package/plasmo).
 
+
+## Pomodoro Counter Extension
+
+The Extension has an Automatic counter for using Pomodoro focusing technique that automatically switches modes
+
+
+# Walkthrough Video Link
+
+https://drive.google.com/file/d/1LUEYC0TA91CUpFWZ0ZekFFUWxqlyYD6w/view?usp=sharing
+
 ## Getting Started
 
 First, run the development server:
@@ -31,3 +41,5 @@ This should create a production bundle for your extension, ready to be zipped an
 ## Submit to the webstores
 
 The easiest way to deploy your Plasmo extension is to use the built-in [bpp](https://bpp.browser.market) GitHub action. Prior to using this action however, make sure to build your extension and upload the first version to the store to establish the basic credentials. Then, simply follow [this setup instruction](https://docs.plasmo.com/framework/workflows/submit) and you should be on your way for automated submission!
+
+
