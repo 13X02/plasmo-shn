@@ -1,12 +1,22 @@
 import React from 'react';
 import Pomodoro from './Pomodoro';
-import './App.css'; // import your stylesheet here
 
 function App() {
   return (
-    <div className="App">
-      <Pomodoro />
-    </div>
+    <div style={{
+        position: 'relative',
+        width:'198vh',
+        height: '200px'
+      }} className="App">
+        <div style={{
+          position: 'absolute',
+          top: '20px',
+          right: '20px'
+        }}>
+          <Pomodoro />
+        </div>
+      </div>
+      
   );
 }
 

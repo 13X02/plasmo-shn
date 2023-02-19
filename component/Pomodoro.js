@@ -6,7 +6,7 @@ const TIMER_VALUES = {
   longBreak: 900, // 15 minutes
 };
 
-const App = () => {
+const Pomodoro = () => {
   const [timer, setTimer] = useState(TIMER_VALUES.pomodoro);
   const [isActive, setIsActive] = useState(false);
   const [isPaused, setIsPaused] = useState(false);
@@ -82,20 +82,74 @@ const App = () => {
   }, [timerType, pomodoroCount]);
 
   return (
-    <div className='pomodoro'>
-      <h2>{timerType}</h2>
-      <h1>{formatTime(timer)}</h1>
-      <div className='buttons'>
+    <div style={{
+      display: 'flex',
+      flexDirection: 'column',
+      alignItems: 'center',
+      justifyContent: 'center',
+      height: '200px',
+      backgroundColor: '#ea2121',
+      borderRadius: '20px',
+      padding: '10px'
+    }} className='pomodoro'>
+      <h2 style={{ fontSize: '1.5rem', marginBottom: '10px', color: '#ffffff', fontFamily: 'Courier New' }}>{timerType}</h2>
+<h1 style={{ fontSize: '3.5rem', fontWeight: 700, margin: 0, color: '#ffffff', fontFamily: 'Courier New' }}>{formatTime(timer)}</h1>
+
+      <div style={{ display: 'flex', justifyContent: 'center', gap: '10px', marginTop: '10px' }} className='buttons'>
         {!isActive && !isPaused && (
-          <button onClick={handleStart}>Start</button>
+          <button style={{
+            padding: '8px 16px',
+            fontSize: '1rem',
+            fontWeight: 600,
+            textTransform: 'uppercase',
+            backgroundColor: '#8ac926',
+            color: 'white',
+            border: 'none',
+            borderRadius: '50px',
+            cursor: 'pointer',
+            transition: 'all 0.2s ease-in-out', fontFamily: 'Courier New' 
+          }} onClick={handleStart}>Start</button>
         )}
         {isActive && !isPaused && (
-          <button onClick={handlePause}>Pause</button>
+          <button style={{
+            padding: '8px 16px',
+            fontSize: '1rem',
+            fontWeight: 600,
+            textTransform: 'uppercase',
+            backgroundColor: '#8ac926',
+            color: 'white',
+            border: 'none',
+            borderRadius: '50px',
+            cursor: 'pointer',
+            transition: 'all 0.2s ease-in-out', fontFamily: 'Courier New' 
+          }} onClick={handlePause}>Pause</button>
         )}
-        {isPaused && <button onClick={handleResume}>Resume</button>}
-        <button onClick={handleReset}>Reset</button>
+        {isPaused && <button style={{
+          padding: '8px 16px',
+          fontSize: '1rem',
+          fontWeight: 600,
+          textTransform: 'uppercase',
+          backgroundColor: '#8ac926',
+          color: 'white',
+          border: 'none',
+          borderRadius: '50px',
+          cursor: 'pointer',
+          transition: 'all 0.2s ease-in-out', fontFamily: 'Courier New' 
+        }} onClick={handleResume}>Resume</button>}
+        <button style={{
+          padding: '8px 16px',
+          fontSize: '1rem',
+          fontWeight: 600,
+          textTransform: 'uppercase',
+          backgroundColor: '#8ac926',
+          color: 'white',
+          border: 'none',
+          borderRadius: '50px',
+          cursor: 'pointer',
+          transition: 'all 0.2s ease-in-out', fontFamily: 'Courier New' 
+        }} onClick={handleReset}>Reset</button>
       </div>
-    </div>
+    </div>    
   );
 };
 
