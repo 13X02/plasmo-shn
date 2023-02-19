@@ -1,0 +1,12 @@
+.App {
+  height: 100vh;
+  position: relative;
+}
+
+.Pomodoro {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJtYXBwaW5ncyI6IkFBQUE7Ozs7O0FBS0UiLCJzb3VyY2VzIjpbImNvbXBvbmVudC9BcHAuY3NzIl0sInNvdXJjZXNDb250ZW50IjpbIi5BcHAge1xuICAgIHBvc2l0aW9uOiByZWxhdGl2ZTtcbiAgICBoZWlnaHQ6IDEwMHZoOyAvKiBzZXQgdGhlIGhlaWdodCBvZiB0aGUgY29udGFpbmVyIHRvIHRoZSBmdWxsIHZpZXdwb3J0IGhlaWdodCAqL1xuICB9XG4gIFxuICAuUG9tb2Rvcm8ge1xuICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgICBib3R0b206IDA7XG4gICAgcmlnaHQ6IDA7XG4gIH1cbiAgIl0sIm5hbWVzIjpbXSwidmVyc2lvbiI6MywiZmlsZSI6ImNvbnRlbnQuYTE4NjlmMzQuY3NzLm1hcCJ9 */
